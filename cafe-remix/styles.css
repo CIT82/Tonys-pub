@@ -53,6 +53,7 @@ hr {
 
 h1, h2 {
   font-family:"Cherry Bomb One", system-ui;
+  box-shadow: 10px 5px 5px black;
 }
 
 .item p {
