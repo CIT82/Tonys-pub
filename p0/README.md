@@ -14,6 +14,7 @@
 - Hero section 82-141
 - About section 143-215
 - Stats section 217-262
+<<<<<<< HEAD
 - Services section 264-357
 # Part 2
 ## Site inventory (Bottom Half)
@@ -66,3 +67,6 @@
 - main js files
 - Lines 1610-1611
 - Link: <script src="assets/js/main.js"></script>
+=======
+- Services section 264-357
+>>>>>>> 76ed01d64377beaf138063362c0174c26e21f866
