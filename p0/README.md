@@ -56,3 +56,13 @@
 - Top-level Classes: footer-top
 - line numbers: 1530-1592
 - Research: its the anchor at the bottom of the page, providing essential navigation, branding, social connectivity, and copyright information. 
+## Script analysis
+- Vendor js files
+- Lines: 1600-1608
+- links: <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> Bootstrap 5 JavaScript Bundle
+  <script src="assets/vendor/aos/aos.js"></script> Animate On Scroll
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> lightbox popup modal gallery
+
+- main js files
+- Lines 1610-1611
+- Link: <script src="assets/js/main.js"></script>
