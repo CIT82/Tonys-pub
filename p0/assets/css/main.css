@@ -31,7 +31,7 @@
 :root {
   --nav-color: #e4edf5;  /* The default color of the main navmenu links */
   --nav-hover-color: #10a3d7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: rgba(22, 29, 44, 0.95); /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: rgba(231, 63, 200, 0.95); /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: rgba(23, 30, 47, 0.95); /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: rgba(215, 226, 235, 0.645); /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -4421,6 +4421,75 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+
+:root {
+  --accent-color: #ff007f !important; /* Neon Magenta accent */
+  --heading-color: #2b2b2b !important;
+  --default-color: #444444 !important;
 }
+
+/* Header & Brand Logo Adjustments */
+.header .sitename, 
+.footer .sitename {
+  color: #ff007f !important; /* Neon Magenta */
+}
+
+/* Hero Section Highlights & Subtitles */
+.hero .highlight {
+  color: #ff007f !important;
+}
+
+.hero .subtitle span {
+  background-color: rgba(251, 206, 177, 0.3); /* Soft Apricot tint */
+  color: #d97706 !important;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+/* Primary Buttons (View Members, etc.) */
+.primary-btn, 
+.btn-primary {
+  background-color: #ff007f !important;
+  border-color: #ff007f !important;
+  color: #ffffff !important;
+}
+
+.primary-btn:hover, 
+.btn-primary:hover {
+  background-color: #d9006c !important;
+  border-color: #d9006c !important;
+}
+
+/* Secondary Buttons & Links */
+.secondary-btn {
+  border: 2px solid #fbceb1 !important; /* Apricot border */
+  color: #333333 !important;
+}
+
+.secondary-btn:hover {
+  background-color: #fbceb1 !important; /* Apricot fill on hover */
+  color: #000000 !important;
+}
+
+/* Navigation Active States */
+.navmenu .active, 
+.navmenu li:hover > a {
+  color: #ff007f !important;
+}
+
+/* Footer Accent Polish */
+.footer {
+  background-color: #1a1a1a;
+  color: #cccccc;
+}
+
+.footer h4 {
+  color: #fbceb1 !important; /* Apricot headers in footer */
+}
+
+.footer a:hover {
+  color: #ff007f !important;
+} 
+
+
