@@ -19,20 +19,21 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #070d1a; /* Background color for the entire website, including individual sections */
-  --default-color: #e4edf5; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #f2f8fe; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #10a3d7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #131825; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #0d060a; /* TWICE Dark Background with subtle magenta tint */
+  --default-color: #fce4ec; /* TWICE Soft Pink Text */
+  --heading-color: #ffffff; /* Pure White Headings */
+  --accent-color: #FF007F; /* TWICE Official Neon Magenta */
+  --secondary-color: #FFC57F; /* TWICE Official Apricot */
+  --surface-color: #1a0f16; /* TWICE Dark Surface Card Color */
+  --contrast-color: #ffffff; /* Contrast color */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #e4edf5;  /* The default color of the main navmenu links */
-  --nav-hover-color: #10a3d7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: rgba(231, 63, 200, 0.95); /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: rgba(23, 30, 47, 0.95); /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-color: #fce4ec;  /* The default color of the main navmenu links */
+  --nav-hover-color: #FF007F; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: rgba(255, 0, 127, 0.95); /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: rgba(26, 15, 22, 0.95); /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: rgba(215, 226, 235, 0.645); /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -60,10 +61,22 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
-body {
+
+/*body {
   color: var(--default-color);
   background-color: var(--background-color);
+  background-image: url('assets/img/favicon.ico');
+  background-repeat: repeat;
+  background-size: 48px 48px;
+  background-blend-mode: overlay;
   font-family: var(--default-font);
+}*/
+body {
+  /* A smooth linear gradient from Apricot to Neon Magenta */
+  background: linear-gradient(135deg, #ffc0cb, #ff1493);
+  /* Ensures the gradient covers the full viewport and doesn't repeat */
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 a {
@@ -299,13 +312,127 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /*background-color: var(--background-color);*/
+  background: linear-gradient(135deg, #f8cfa9, #ff5ea6);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
 }
 
 .footer .footer-top {
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-about .logo {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.footer .footer-about .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.footer .footer-about .logo span {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-about p {
+  font-size: 14px;
+  font-family: var(--heading-font);
+  color: #000;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: #000;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  color: #000;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  color: #000;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #000;
+}
+/*.footer .footer-top {
   padding-top: 50px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
@@ -412,7 +539,8 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
-}
+} */
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -793,7 +921,7 @@ section,
   justify-content: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
   background-color: transparent;
-  color: var(--default-color);
+  
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
