@@ -4620,4 +4620,20 @@ section,
   color: #ff007f !important;
 } 
 
+.member-card {
+    background: linear-gradient(135deg, #e60073, #ffb3c6) !important;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(230, 0, 115, 0.4) !important;
+}
+
+.member-card .card-body {
+    background-color: rgba(18, 18, 18, 0.85); /* Dark background overlay for text readability */
+    color: #f8f9fa;
+    margin: 3px; /* Creates a cool gradient border frame effect */
+    border-radius: calc(0.37rem - 1px);
+}
