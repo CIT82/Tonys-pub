@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #0d060a; /* TWICE Dark Background with subtle magenta tint */
+  --background-color: #a3497c; /* TWICE Dark Background with subtle magenta tint */
   --default-color: #fce4ec; /* TWICE Soft Pink Text */
   --heading-color: #ffffff; /* Pure White Headings */
   --accent-color: #FF007F; /* TWICE Official Neon Magenta */
