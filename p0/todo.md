@@ -3,7 +3,7 @@
 ## Architecture (The 12 Pages)
 1. - [x] Split main template sections into dedicated HTML files for all 9 member pages (`nayeon.html`, `jeongyeon.html`, `momo.html`, `sana.html`, `jihyo.html`, `mina.html`, `dahyun.html`, `chaeyoung.html`, `tzuyu.html`). 
 2. - [x] Create the main `index.html` landing page featuring a group overview, and quick navigation cards.
-3. - [x] Build `discography.html` to showcase album releases, tracklists, and streaming links.
+3. - [x] Build `discography.html` to showcase album releases, tracklists.
 4. - [x] Create `about.html` covering group history, debut details, and major milestones.
 
 ## Content Replacement
