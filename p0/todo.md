@@ -8,7 +8,7 @@
 
 ## Content Replacement
 5. - [x] Replace generic hero banner text and headings with TWICE branding, debut tagline, and official group summary.
-6. - [ ] Add links to  Official licensed merchandise of TWICE across shopping apps on the merchandise page.
+
 7. - [x] Add custom biography copy, birthdates, positions, and fun facts for each of the 9 individual member pages. 
 8. - [x] change concerts to mv.html (music video) and add SOME not ALL of their MVs.
 
